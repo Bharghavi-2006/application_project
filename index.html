@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="'UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "dashboard-container">
+            <header class = "dashboard-header">
+                <div class="logo-container">
+                    <h1>
+                        Pharaoh's Dashboard
+                    </h1>
+                </div>
+                <div class="user-profile">
+                    <span class="username">
+                        Username
+                    </span>
+                    <div class="profile-icon">
+                        ☥
+                    </div>
+                </div>
+            </header>
+
+            <nav class="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <span>
+                            Dashboard
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span>
+                            Calendar
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span>
+                            Tasks
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span>
+                            Finance
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span>
+                            Messages
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span>
+                            Settings
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                <section class="widget calendar-widget">
+                    <div class="widget-header">
+                        <h2>
+                            Calendar
+                        </h2>
+                    </div>
+                    <div class="widget-content">
+                        <div class="calendar-header">
+                            <span class="month-year">
+                                April 2025
+                            </span>
+                            <div class="calendar-nav">
+                                <button class="calendar-nav-btn"></button>
+                                <button class="calendar-nav-btn"></button>
+                            </div>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="calendar-day day-header">Sun</div>
+                            <div class="calendar-day day-header">Mon</div>
+                            <div class="calendar-day day-header">Tue</div>
+                            <div class="calendar-day day-header">Wed</div>
+                            <div class="calendar-day day-header">Thu</div>
+                            <div class="calendar-day day-header">Fri</div>
+                            <div class="calendar-day day-header">Sat</div>
+
+                            <div class="calendar-day inactive">30</div>
+                            <div class="calendar-day inactive">31</div>
+                            <div class="calendar-day">1</div>
+                            <div class="calendar-day">2</div>
+                            <div class="calendar-day">3</div>
+                            <div class="calendar-day">4</div>
+                            <div class="calendar-day">5</div>
+                            <div class="calendar-day">6</div>
+                            <div class="calendar-day">7</div>
+                            <div class="calendar-day">8</div>
+                            <div class="calendar-day">9</div>
+                            <div class="calendar-day">10</div>
+                            <div class="calendar-day">11</div>
+                            <div class="calendar-day">12</div>
+                            <div class="calendar-day">13</div>
+                            <div class="calendar-day">14</div>
+                            <div class="calendar-day">15</div>
+                            <div class="calendar-day has-event current-day">16</div>
+                            <div class="calendar-day">17</div>
+                            <div class="calendar-day has-event">18</div>
+                            <div class="calendar-day">19</div>
+                            <div class="calendar-day">20</div>
+                            <div class="calendar-day">21</div>
+                            <div class="calendar-day">22</div>
+                            <div class="calendar-day">23</div>
+                            <div class="calendar-day">24</div>
+                            <div class="calendar-day">25</div>
+                            <div class="calendar-day">26</div>
+                            <div class="calendar-day">27</div>
+                            <div class="calendar-day">28</div>
+                            <div class="calendar-day">29</div>
+                            <div class="calendar-day">30</div>
+                            <div class="calendar-day inactive">1</div>
+                            <div class="calendar-day inactive">2</div>
+                            <div class="calendar-day inactive">3</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="widget todo-widget">
+                    <div class="widget-header">
+                        <h2>
+                            Tasks
+                        </h2>
+                    </div>
+                    <div class="widget-content">
+                        <div class="task-controls">
+                            <input type="text" placeholder="Add new task..." class="task-input">
+                            <button class="add-task-btn">Add</button>
+                        </div>
+                        <ul class="task-list">
+                            <li class="task-item completed">
+                                <input type="checkbox" checked>
+                                <span class="task-text">
+                                    Attend all classes
+                                </span>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox">
+                                <span class="task-text">
+                                    Attend NSO
+                                </span>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox">
+                                <span class="task-text">
+                                    Check screen time. beat yourself up if it's more than 2 hours
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="widget notifications-widget">
+                    <div class="widget-header">
+                        <h2>Notifications</h2>
+                    </div>
+                    <div class="widget-content">
+                        <ul class="notification-list">
+                            <li class="notification-item">
+                                <div class="notification-icon email">
+                                </div>
+                                <div class="notification-content">
+                                    <div class="notification-title">
+                                        New Email from E-Cell
+                                    </div>
+                                    <div class="notification-text">
+                                        Release of Manager Application : 2025-2026 
+                                    </div>
+                                    <div class="notification-time">
+                                        10 minutes ago
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notification-item">
+                                <div class="notification-icon calendar">
+                                </div>
+                                <div class="notification-content">
+                                    <div class="notification-title">
+                                        Extra CY1001 class
+                                    </div>
+                                    <div class="notification-text">
+                                        Scheduled from 5pm-6pm
+                                    </div>
+                                    <div class="notification-time">
+                                        1 hour ago
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notification-item">
+                                <div class="notification-icon system">
+                                </div>
+                                <div class="notification-content">
+                                    <div class="notification-title">
+                                        AI club hackathon
+                                    </div>
+                                    <div class="notification-text">
+                                        Register here
+                                    </div>
+                                    <div class="notification-time">
+                                        Yesterday
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="widget budget-widget">
+                    <div class="widget-header">
+                        <h2>
+                            Budget
+                        </h2>
+                    </div>
+                    <div class="widget-content">
+                        <div class="budget-summary">
+                            <div class="budget-total">
+                                <span class="budget-label">
+                                    Total Budget
+                                </span>
+                                <span class="budget-amount">
+                                    $5,000
+                                </span>
+                            </div>
+                            <div class="budget spent">
+                                <span class="budget-label">
+                                    Spent
+                                </span>
+                                <span class="budget-amount">
+                                    $1,750
+                                </span>
+                            </div>
+                            <div class="budget-remaining">
+                                <span class="budget-label">
+                                    Remaining
+                                </span>
+                                <span class="budget-amount">
+                                    $3,250
+                                </span>
+                            </div>
+                        </div>
+                        <div class="budget-categories">
+                            <div class="budget-category">
+                                <div class="category-name">
+                                    CCD treat
+                                </div>
+                                <div class="category-amount">
+                                    $750
+                                </div>
+                                <div class="category-bar">
+                                    <div class="category-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="budget-category">
+                                <div class="category-name">
+                                    Swiggy
+                                </div>
+                                <div class="category-amount">
+                                    $750
+                                </div>
+                                <div class="category-bar">
+                                    <div class="category-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="budget-category">
+                                <div class="category-name">
+                                    Primemart
+                                </div>
+                                <div class="category-amount">
+                                    $250
+                                </div>
+                                <div class="category-bar">
+                                    <div class="category-progress" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="widget weather-widget">
+                    <div class="widget-header">
+                        <h2>Weather</h2>
+                    </div>
+                    <div class="widget-content">
+                        <div class="weather-current">
+                            <div class="weather-icon">
+                            </div>
+                            <div class="weather-info">
+                                <div class="weather-temp">32 degree Celsius</div>
+                                <div class="weather-desc">Sunny</div>
+                                <div class="weather-location">Chennai. India</div>
+                            </div>
+                        </div>
+                        <div class="weather-forecast">
+                            <div class="forecast-day">
+                                <div class="forecast-name">Thu</div>
+                                <div class="forecast-icon">Sunny</div>
+                                <div class="forecast-temp">34 degree celsius</div>
+                            </div>
+                            <div class="forecast-day">
+                                <div class="forecast-name">Fri</div>
+                                <div class="forecast-icon">Sunny</div>
+                                <div class="forecast-temp">36 degree celsius</div>
+                            </div>
+                            <div class="forecast-day">
+                                <div class="forecast-name">Sat</div>
+                                <div class="forecast-icon">Sunny</div>
+                                <div class="forecast-temp">40 degree celsius</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="widget qoute-widget">
+                    <div class="widget-header">
+                        <h2>Quote of the Day</h2>
+                    </div>
+                    <div class="widget-content">
+                        <div class="quote-text">
+                            "I refuse to let the person you once were be the reason I won't let go of the person you've become"
+                        </div>
+                        <div class="quote-author">-YouTube Shorts</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
